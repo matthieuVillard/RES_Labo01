@@ -1,0 +1,17 @@
+operation;strategy;blockSize;fileSizeInBytes;durationInMs
+WRITE;BlockByBlockWithBufferedStream;500;10485760;1
+WRITE;BlockByBlockWithBufferedStream;50;10485760;0
+WRITE;BlockByBlockWithBufferedStream;5;10485760;0
+WRITE;ByteByByteWithBufferedStream;0;10485760;1
+WRITE;BlockByBlockWithoutBufferedStream;500;10485760;0
+WRITE;BlockByBlockWithoutBufferedStream;50;10485760;1
+WRITE;BlockByBlockWithoutBufferedStream;5;10485760;0
+WRITE;ByteByByteWithoutBufferedStream;0;10485760;0
+READ;BlockByBlockWithBufferedStream;500;10485760;44
+READ;BlockByBlockWithBufferedStream;50;10485760;24
+READ;BlockByBlockWithBufferedStream;5;10485760;41
+READ;ByteByByteWithBufferedStream;0;10485760;70
+READ;BlockByBlockWithoutBufferedStream;500;10485760;35
+READ;BlockByBlockWithoutBufferedStream;50;10485760;355
+READ;BlockByBlockWithoutBufferedStream;5;10485760;2960
+READ;ByteByByteWithoutBufferedStream;0;10485760;12910
